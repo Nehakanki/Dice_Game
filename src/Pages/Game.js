@@ -63,7 +63,7 @@ const Game = () => {
       if (selectedNumber === rand_num) {
         setTotal((prevTotal) => prevTotal + selectedNumber);
       } else {
-        setTotal((prevTotal) => prevTotal - selectedNumber);
+        setTotal((prevTotal) => prevTotal - 1);
       }
   
       // Reset click state and selectedNumber
@@ -80,7 +80,8 @@ const Game = () => {
     return diceImages[rand_num - 1];
   };
   return (
-    <div className="container mx-auto mt-8 p-4 bg-slate-50 text-black text-center">
+   
+      <div className="w-11/12 max-w-maxContent h-screen  mx-auto items-center justify-center mt-8 p-4  text-black text-center bg-slate-50 ">
       <div className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
         Let's Play
        
@@ -127,6 +128,7 @@ const Game = () => {
 
       <div className="mt-4">{rules}</div>
     </div>
+   
   );
 };
 

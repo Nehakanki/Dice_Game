@@ -10,13 +10,13 @@ code {
 @tailwind utilities;
 
 .dicefont{
+
   width: 528px;
 height: 144px;
-
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 700;
-font-size: 96px;
+
+
 line-height: 144px;
 /* identical to box height */
 
